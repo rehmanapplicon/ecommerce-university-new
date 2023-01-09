@@ -3784,10 +3784,32 @@ p.form-message.error {
 	padding-bottom: 15px;
 }
 
+/* ---------------announcement-bar------------------- */
+.announcement-bar{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: rgb(157 57 57);
+}
+.announcement-bar .header-contact h5{
+    color: #fff;
+}
 
-
-
-
-
-
-
+/* ................................................... */
+.cursor-pointer{
+    cursor: pointer;
+}
+.color-white{
+    color: white !important;
+}
+.Wishlist, .call-us{
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.4s linear;
+}
+.Wishlist:hover, .Wishlist:hover span, .call-us:hover{
+    color: #ffc600;
+    transition: all 0.4s linear;
+}
+.call-us i{
+    margin-right: 10px;
+}
