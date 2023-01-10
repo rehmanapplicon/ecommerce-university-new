@@ -435,7 +435,9 @@ p {
 }
 
 /*===== Header Logo support =====*/
-
+.logo a img{
+    max-height: 50px;
+}
 .header-logo-support{
     border-bottom: 1px solid #cecece;
 }
