@@ -177,11 +177,13 @@ p {
     color: #07294d;
     position: relative;
     padding-bottom: 12px;
+    font-size: 30px;
+    max-width: max-content;
 }
 .section-title h5::before{
     content: '';
     position: absolute;
-    width: 35px;
+    width: 50%;
     height: 2px;
     background-color: #ffc600;
     bottom: 0;
