@@ -983,17 +983,43 @@ p {
 .category{
     background-color: #07294d;
     border-radius: 10px;
-    margin-top: -150px;
+    margin: 100px 0;
     position: relative;
     z-index: 5;
+    overflow: hidden;
+    background-image: url(../images/slider/s-1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.category .row {
+	position: relative;
+	z-index: 9;
+}
+
+.category:after{
+	content: '';
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	position: absolute;
+    z-index: 5;
+    opacity: 0.9;
+    background-image: radial-gradient( circle at bottom left, rgba(93,155,220,0.5), #07294d 60% );
 }
 
 .category-text{
+	padding: 0 50px;
 }
+
+.text-yellow {
+	color: #ffc600;
+}
+
 .category-text h2{
     font-size: 36px;
     color: #fff;
-    padding: 0 50px;
 }
 
 .singel-category {
@@ -1136,7 +1162,7 @@ p {
 
 
 .apply{
-    margin-top: -100px;
+    margin-top: 100px;
     position: relative;
 }
 
