@@ -1,13 +1,15 @@
 .investing_content_list {
-    background: #8080800a;
-    box-shadow: rgb(50 50 93 / 25%) 0px 2px 5px -1px, rgb(0 0 0 / 30%) 0px 1px 3px -1px;
+    background: #FFF;
+    box-shadow: 0 0 30px #ccc;
     padding: 30px;
     display: inline-block;
     width: 100%;
 }
+
 .static-invest-image img {
     width: 100%;
 }
+
 .section-title h5::before {
     content: '';
     position: absolute;
@@ -17,12 +19,14 @@
     bottom: 0;
     left: 0;
 }
+
 .section-title h5 {
     color: #07294d;
     position: relative;
     padding-bottom: 12px;
     max-width: max-content;
 }
+
 .ordered_lists.business_order ul li:before {
     content: "";
     position: absolute;
@@ -31,6 +35,7 @@
     border: solid 10px #d3dbe2;
     border-radius: 50%;
 }
+
 .ordered_lists.business_order ul {
     padding: 0 0 0 15px;
     display: flex;
@@ -42,14 +47,49 @@
     padding: 13px 0 0 15px;
     position: relative;
 }
+
 .ordered_lists.business_order li:after {
     content: "";
     position: absolute;
-    left: -7px;
-    top: 19px;
+    left: -6px;
+    top: 17px;
     width: 5px;
     height: 10px;
     border: solid #003f93;
     border-width: 0 2px 2px 0;
     transform: rotate(45deg);
+}
+
+.choose-origin .investing_block_list_detail .initiative_bullets ul li {
+    counter-increment: heading-counter;
+    padding-bottom: 20px;
+    /* padding-left: 20px; */
+}
+
+.choose-origin .investing_block_list_detail .initiative_bullets ul li::marker {
+    font-size: 20px;
+    font-weight: bold;
+    content: counter(heading-counter) ": ";
+
+}
+
+.investing_block_list_detail h2 {
+    font-size: 32px;
+    font-weight: 600;
+}
+.investing_block_list_detail .initiative_bullets ul {
+    padding-left: 23px;
+}
+
+.invest-title {
+    font-size: 32px;
+    font-weight: 600;
+}
+.static-invest-image {
+    background-image: url("../images/who-we-are-new.jpg");
+    background-repeat: no-repeat;
+    background-position: fixed;
+    background-size: cover;
+    width: 100%;
+    height: 285px;
 }
