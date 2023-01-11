@@ -1,0 +1,81 @@
+.section-title h5::before {
+    content: '';
+    position: absolute;
+    width: 60%;
+    height: 2px;
+    background-color: #ffc600;
+    bottom: 0;
+    left: 0;
+}
+
+.nvesting_block_list {
+    background: #FFF;
+    box-shadow: 0 0 30px #ccc;
+    padding: 30px;
+    display: inline-block;
+    width: 100%;
+}
+
+.invest-title {
+    color: #444;
+    margin-bottom: 8px;
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.initiatives-content-block {
+    background: #8080800a;
+    box-shadow: 0 0 30px #ccc;
+    padding: 30px;
+    display: inline-block;
+    width: 100%;
+}
+
+.coporate-block {
+    border-bottom: 1px solid #3315151a;
+    padding-bottom: 20px;
+    margin-bottom: 60px;
+}
+.invest-detail p {
+    margin-bottom: 16px;
+}
+.reals-section {
+    display: flex;
+    justify-content: space-between;
+}
+.reals-section .invest-detail {
+    height: fit-content;
+}
+.fixed-layout {
+    padding: 150px 50px;
+}
+ .fixed-layout .overly b {
+    padding: 0% 20%;
+    font-style: italic;
+}
+.fixed-layout .overly {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.fixed-layout {
+    position: relative;
+    text-align: center;
+    color: #fff;
+    background: url(../images/splash_cover-2.png) no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+}
+.real-estate-section {
+    border-bottom: 1px solid #3315151a;
+    padding-bottom: 20px;
+    margin-bottom: 60px;
+}
