@@ -1,7 +1,7 @@
 .section-title h5::before {
     content: '';
     position: absolute;
-    width: 13%;
+    width: 65%;
     height: 2px;
     background-color: #ffc600;
     bottom: 0;
@@ -44,8 +44,29 @@
 .initiative_bullets ul {
     padding-left: 30px;
 } 
+.initiative_bullets ul li {
+    counter-increment: heading-counter;
+    padding-bottom: 20px;
+}
  .initiative_bullets ul li::marker {
     font-size: 20px;
     font-weight: bold;
-    content: counter(heading-counter) ": ";
+  content: counter(heading-counter) ": ";
+}
+
+.static_block {
+    position: relative;
+}
+
+.static_block img.paper_image {
+    position: absolute;
+    top: -55px;
+    left: 20px;
+    /* animation: animate 2s infinite linear; */
+    max-width: 130px;
+    animation: bounce2 2s ease infinite;
+}
+.static_block img.main_globe {
+    transform: rotate(315deg);
+    max-width: 300px;
 }
