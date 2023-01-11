@@ -62,9 +62,9 @@
     position: absolute;
     top: -55px;
     left: 20px;
-    /* animation: animate 2s infinite linear; */
+    animation: animate 2s infinite linear;
     max-width: 130px;
-    animation: bounce2 2s ease infinite;
+    /* animation: bounce2 2s ease infinite; */
 }
 .static_block img.main_globe {
     transform: rotate(315deg);
