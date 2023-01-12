@@ -1,0 +1,150 @@
+.section-title h5::before {
+    content: '';
+    position: absolute;
+    width: 60%;
+    height: 2px;
+    background-color: #ffc600;
+    bottom: 0;
+    left: 0;
+}
+
+.nvesting_block_list {
+    background: #FFF;
+    box-shadow: 0 0 30px #ccc;
+    padding: 30px;
+    display: inline-block;
+    width: 100%;
+}
+
+.invest-title {
+    margin-bottom: 8px;
+    font-size: 31px;
+    font-weight: 700;
+}
+
+.initiatives-content-block {
+    background: #8080800a;
+    box-shadow: 0 0 30px #ccc;
+    padding: 30px;
+    display: inline-block;
+    width: 100%;
+}
+
+.coporate-block {
+    border-bottom: 1px solid #3315151a;
+    padding-bottom: 20px;
+    margin-bottom: 60px;
+}
+
+.invest-detail p {
+    margin-bottom: 16px;
+}
+
+.invest-detail p {
+    margin-bottom: 16px;
+}
+
+.initiative-bullets ul label {
+    display: block;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.initiative-bullets ul {
+    padding-left: 30px;
+}
+
+.initiative_bullets ul li::marker {
+    font-size: 20px;
+    font-weight: bold;
+    content: counter(heading-counter) ": ";
+}
+
+ul.sub-lists li {
+    counter-increment: none !important;
+    position: relative;
+    padding-bottom: 20px;
+}
+
+ul.sub-lists li::marker {
+    font-size: 20px;
+    font-weight: bold;
+    content: '' !important;
+}
+
+ul.sub-lists li::before {
+    content: '';
+    position: absolute;
+    height: 5px;
+    width: 5px;
+    background: transparent;
+    top: 10px;
+    left: -15px;
+    border-radius: 50px;
+    outline: 2px solid #f2bf15;
+}
+
+ul.sub-lists {
+    padding-top: 20px;
+}
+
+.initiative-bullets ul li {
+    counter-increment: heading-counter;
+    padding-bottom: 20px;
+}
+
+.initiative-bullets ul li::marker {
+    font-size: 20px;
+    font-weight: bold;
+    content: counter(heading-counter) ": ";
+}
+
+.ordered-lists.business-order ul {
+    padding: 0 0 0 30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.csrf-benefits .ordered-lists ul li {
+    max-width: 50% !important;
+    flex: 0 0 50% !important;
+}
+
+.ordered-lists.business-order ul li:before {
+    content: "";
+    position: absolute;
+    left: -15px;
+    top: 15px;
+    border: solid 10px #d3dbe2;
+    border-radius: 50%;
+}
+
+.ordered-lists.business-order li:after {
+    content: "";
+    position: absolute;
+    left: -7px;
+    top: 19px;
+    width: 5px;
+    height: 10px;
+    border: solid #003f93;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+.ordered-lists.business-order li {
+    list-style: none;
+    padding: 13px 0 0 15px;
+    position: relative;
+}
+
+.investing-block-list-section {
+    border-bottom: 1px solid #3315151a;
+    padding-bottom: 20px;
+    margin-bottom: 60px;
+}
+
+.investing_block_list {
+    border-bottom: 1px solid #3315151a;
+    padding-bottom: 30px;
+    margin-bottom: 60px;
+}
