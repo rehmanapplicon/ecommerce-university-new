@@ -17,7 +17,16 @@ $(function() {
     $(window).on('load', function(event) {
         $('.preloader').delay(500).fadeOut(500);
     });
-    
+
+    //===== Programs animation
+    $('.program-link').mouseover(function() {
+        $(this).siblings('.cont').children('.before-hover').addClass('hide');
+        $(this).siblings('.cont').children('.after-hover').addClass('show');
+    });
+    $('.program-link').mouseout(function() {
+        $(this).siblings('.cont').children('.before-hover').removeClass('hide');
+        $(this).siblings('.cont').children('.after-hover').removeClass('show');
+    });
     
     //===== Search
     

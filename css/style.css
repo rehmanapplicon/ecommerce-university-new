@@ -1480,6 +1480,14 @@ p {
 .singel-teachers{
     position: relative;
 }
+.singel-teachers.program .program-link {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 9;
+}
 .singel-teachers .image{
     border-radius: 5px;
     overflow: hidden;
@@ -1488,6 +1496,9 @@ p {
     -webkit-transition: all 0.4s linear;
     transition: all 0.4s linear;
     width: 100%;
+    min-height: 300px !important;
+    max-height: 300px; 
+    object-fit: cover;
 }
 .singel-teachers:hover .image img{
     -webkit-transform: scale(1.1);
@@ -1504,6 +1515,31 @@ p {
     border-radius: 5px;
     margin: 0 auto;
     padding: 15px;
+    overflow: hidden;
+}
+.singel-teachers .cont .before-hover, .singel-teachers .cont .after-hover {
+	position: relative;
+	transition: 500ms ease;
+}
+.singel-teachers .cont .after-hover {
+	bottom: -50px;
+	height: 0;
+	opacity: 0;
+}
+.singel-teachers .cont .before-hover {
+	top: 0px;
+	height: auto;
+	opacity: 1;
+}
+.singel-teachers .cont .after-hover.show {
+	bottom: 0px;
+	height: auto;
+	opacity: 1;
+}
+.singel-teachers .cont .before-hover.hide {
+	top: -50px;
+	height: 0;
+	opacity: 0;
 }
 .singel-teachers .cont a{
     display: block;
@@ -1544,6 +1580,9 @@ p {
 }
 .singel-publication .image img{
     width: 100%;
+    min-height: 200px;
+    object-fit: cover;
+    max-height: 200px;
 }
 .singel-publication .image .add-cart{
     position: absolute;
