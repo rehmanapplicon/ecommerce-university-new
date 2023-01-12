@@ -1,0 +1,64 @@
+.contact-page .mask {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: inherit;
+    background-color: rgba(0,0,0,.45);
+    overflow: hidden;
+}
+.contact-page {
+    background-image: url(../images/bg-1.jpg);
+    min-height: calc(100vh - 100px);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover;
+}
+.campus-form-row-contact {
+    background-color: #07294d;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.icon {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    color: #fff;
+}
+.icon h4 {
+    color: #fff;
+}
+.contact.campus-form-row-contact ul {
+    padding: 34px 25px;
+}
+.top-block {
+    min-height: 80px;
+}
+.card {
+    border-radius: 0px;
+    border: none;
+}
+.contact-page-container {
+    padding: 16px;
+}
+.card-body {
+    padding: 0px;
+}
+.address-post-large p {
+    color: #fff;
+    padding: 0px 10px;
+    line-height: 1.3;
+}
+
+.row.campus-form-row {
+    display: flex;
+    justify-content: end;
+}
+.address-form-row {
+    display: flex;
+    justify-content: space-between;
+}
+
