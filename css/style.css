@@ -1180,7 +1180,8 @@ p {
 }
 
 .apply .apply-cont {
-    padding: 45px 50px 50px;
+    padding: 32px 40px 40px;
+    height: 100%;
 }
 .apply .apply-cont h3{
     font-size: 30px;
@@ -1189,10 +1190,14 @@ p {
 }
 .apply .apply-cont p{
     color: #fff;
-    padding-bottom: 45px;
 }
 .apply .apply-cont .main-btn:hover{
     border-color: #ffc600;
+}
+.apply .apply-cont img {
+    max-height: 80px;
+    filter: brightness(0) invert(1);
+    margin-bottom: 30px;
 }
 
 
@@ -1360,7 +1365,12 @@ p {
     border-color: #ffc600;
     background-color: #ffc600;
 }
-
+.apply-cont {
+	border-radius: 5px;
+}
+.apply .col-lg-3:nth-child(even) .apply-cont {
+	background-color: #123a64;
+}
 
 /*=====================================================
     8. VIDEO FEATURES css 
@@ -1372,10 +1382,40 @@ p {
 .feature-bg{
     position: absolute;
     top: 0;
-    right: 0;
-    width: 50%;
+    left: 0;
+    width: 56%;
     height: 100%;
     background-color: rgba(7, 41, 77, 0.9);
+}
+.feature .ordered-lists.business-order li {
+    list-style: none;
+    padding: 13px 0 0 15px;
+    position: relative;
+    color: #fff;
+    margin: 0 0 0 15px;
+}
+.feature .ordered-lists.business-order li:before {
+    content: "";
+    position: absolute;
+    left: -15px;
+    top: 15px;
+    border: solid 10px #d3dbe2;
+    border-radius: 50%;
+}
+.feature .ordered-lists.business-order li:after {
+    content: "";
+    position: absolute;
+    left: -7px;
+    top: 19px;
+    width: 5px;
+    height: 10px;
+    border: solid #003f93;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+.feature .main-btn:hover {
+    border-color: #ffc600;
+    background: transparent;
 }
 
 .video{
@@ -1482,8 +1522,12 @@ p {
     font-size: 14px;
     color: #8a8a8a;
 }
-
-
+.bussiness-part.feature .ordered-lists.business-order li {
+	color: #505050;
+}
+.img-text-sec .img-col img {
+	max-height: 400px;
+}
 
 /*=====================================================
     10. PUBLICATION css 
@@ -1582,149 +1626,13 @@ p {
     font-size: 12px;
     line-height: 35px;
 }
-
-/*=====================================================
-    11. TEASTIMONIAL css 
-======================================================*/
-
-#testimonial{}
-#testimonial .section-title{
-    position: relative;
-    z-index: 5;
+.singel-publication .image {	
+	-webkit-transition: all 0.2s linear;
+    transition: all 0.2s linear;
 }
-#testimonial .section-title h5,
-#testimonial .section-title h2{
-    color: #fff;
+.singel-publication:hover .image {
+    transform: scale(1.05);
 }
-#testimonial .section-title h5::before{
-    background-color: #fff;
-}
-
-.testimonial-slied{
-    position: relative;
-    z-index: 5;
-}
-.singel-testimonial{
-    position: relative;
-}
-.singel-testimonial .testimonial-thum{
-    position: absolute;
-    display: inline-block;
-    left: 0;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-    transform: translateY(-50%);
-}
-.singel-testimonial .testimonial-thum img{
-    border-radius: 5px;
-}
-.singel-testimonial .testimonial-thum .quote{
-    position: absolute;
-    right: -22px;
-    top: -22px;
-}
-.singel-testimonial .testimonial-thum .quote i{
-    width: 45px;
-    height: 45px;
-    line-height: 45px;
-    text-align: center;
-    background-color: #ffc600;
-    border-radius: 50%;
-    color: #07294d;
-    font-size: 18px;
-}
-.singel-testimonial .testimonial-cont {
-    padding-left: 140px;
-}
-.singel-testimonial .testimonial-cont p {
-    color: #fff;
-    padding-bottom: 32px;
-}
-.singel-testimonial .testimonial-cont h6 {
-    color: #fff;
-    padding-bottom: 4px;
-}
-.singel-testimonial .testimonial-cont span {
-    color: #fff;
-    font-size: 18px;
-}
-
-.testimonial-slied .slick-dots{
-    margin: 0 auto;
-}
-.testimonial-slied .slick-dots li{
-    display: inline-block;
-    margin-top: 15px;
-}
-.testimonial-slied .slick-dots li button{
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background-color: #fff;
-    font-size: 0;
-    padding: 0;
-    border: 0;
-    margin: 0 3px;
-    cursor: pointer;
-}
-
-.testimonial-slied .slick-dots li.slick-active button{
-    background-color: #ffc600;
-}
-
-
-/*=====================================================
-    12. NEWS css 
-======================================================*/
-
-.singel-news{}
-.singel-news .news-thum{}
-.singel-news .news-thum img{
-    width: 100%;
-    border-radius: 5px;
-}
-.singel-news .news-cont{}
-.singel-news .news-cont ul li{
-    display: inline-block;
-    margin-right: 25px;
-}
-.singel-news .news-cont ul li:last-child{
-    margin-right: 0;
-}
-
-.singel-news .news-cont ul li a{
-    color: #8a8a8a;
-    font-size: 15px;
-}
-.singel-news .news-cont ul li a i{
-    color: #ffc600;
-    margin-right: 8px;
-}
-.singel-news .news-cont ul li a span{
-    color: #07294d;
-}
-.singel-news .news-cont a{
-    display: block;
-}
-.singel-news .news-cont a h3{
-    font-size: 24px;
-    color: #000;
-    padding-bottom: 20px;
-    padding-top: 10px;
-    -webkit-transition: all 0.4s linear;
-    transition: all 0.4s linear;
-}
-.singel-news .news-cont a:hover h3{
-    color: #ffc600;
-}
-
-.news-list .news-cont h3{
-    font-size: 20px;
-}
-.news-list .news-cont ul li a{
-    font-size: 14px;
-}
-
 
 /*=====================================================
     13. FOOTER css 
@@ -3844,63 +3752,80 @@ p.form-message.error {
     margin-right: 10px;
 }
 /* ------------VIDEO-SECTION-------------- */
-.main-banner{
+.main-banner {
     position: relative;
-  }
-  #homeVideo_sec1 #bg-video {
-    min-width: 100%;
-    min-height: 100vh;
-    max-width: 100%;
-    max-height: 100vh;
-    object-fit: cover;
-    z-index: 1;
-  }
-  #homeVideo_sec1 .video-overlay {
+}
+#homeVideo_sec1 #bg-video {
+	min-width: 100%;
+	min-height: 100vh;
+	max-width: 100%;
+	max-height: 100vh;
+	object-fit: cover;
+	z-index: 1;
+}
+#homeVideo_sec1 .video-overlay {
+	position: absolute;
+	background-color: rgba(35,45,57,0.8);
+	top: 0;
+	left: 0;
+	bottom: 7px;
+	width: 100%;
+}
+#homeVideo_sec1 .main-banner .caption {
+	text-align: center;
+	position: absolute;
+	width: 80%;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+}
+#homeVideo_sec1 .main-banner .caption h6 {
+	margin-top: 0px;
+	font-size: 18px;
+	text-transform: uppercase;
+	font-weight: 800;
+	color: #fff;
+	letter-spacing: 0.5px;
+}
+#homeVideo_sec1 .main-banner .caption h2 {
+	margin-top: 30px;
+	margin-bottom: 5px;
+	font-size: 48px;
+	text-transform: uppercase;
+	font-weight: 800;
+	color: #ffbd07;
+	letter-spacing: 1px;
+}
+#homeVideo_sec1 .main-banner .caption h2 em {
+	font-style: normal;
+	color: #ffbd07;
+	font-weight: 900;
+}
+#homeVideo_sec1 .main-button a {
+	display: inline-block;
+	font-size: 15px;
+	padding: 12px 20px;
+	background-color: #ed563b;
+	color: #fff;
+	text-align: center;
+	font-weight: 400;
+	text-transform: uppercase;
+	transition: all .3s;
+}
+.maps-row .col-lg-4:nth-child(odd) {
+    background: #fff;
+}
+.maps-row .col-lg-4:nth-child(even) {
+    background: #dfdfdf;
+}
+#publication-part .singel-publication {
+	position: relative;
+}
+#publication-part .col-lg-3 a.category_link {
     position: absolute;
-    background-color: rgba(35,45,57,0.8);
-    top: 0;
     left: 0;
-    bottom: 7px;
+    top: 0;
     width: 100%;
-  }
-  #homeVideo_sec1 .main-banner .caption {
-    text-align: center;
-    position: absolute;
-    width: 80%;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%,-50%);
-  }
-  #homeVideo_sec1 .main-banner .caption h6 {
-    margin-top: 0px;
-    font-size: 18px;
-    text-transform: uppercase;
-    font-weight: 800;
-    color: #fff;
-    letter-spacing: 0.5px;
-  }
-  #homeVideo_sec1 .main-banner .caption h2 {
-    margin-top: 30px;
-    margin-bottom: 5px;
-    font-size: 48px;
-    text-transform: uppercase;
-    font-weight: 800;
-    color: #ffbd07;
-    letter-spacing: 1px;
-  }
-  #homeVideo_sec1 .main-banner .caption h2 em {
-    font-style: normal;
-    color: #ffbd07;
-    font-weight: 900;
-  }
-  #homeVideo_sec1 .main-button a {
-    display: inline-block;
-    font-size: 15px;
-    padding: 12px 20px;
-    background-color: #ed563b;
-    color: #fff;
-    text-align: center;
-    font-weight: 400;
-    text-transform: uppercase;
-    transition: all .3s;
-  }
+    height: 100%;
+    z-index: 9;
+}
